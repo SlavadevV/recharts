@@ -1,0 +1,10 @@
+.legend{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.legendItem:not(:last-child){
+    margin-bottom: 10px;
+}

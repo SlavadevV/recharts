@@ -1,0 +1,46 @@
+.barWrapper{
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    background: #DBDBDB55;
+}
+
+.barWrapper:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.bar{
+    width: 0;
+    height: 15px;
+    background: red;
+    border-radius: 15px;
+    transition: 2s width ease;
+}
+
+.legendValue{
+    font-size: 12px;
+}
+
+.legendWrapper{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legendWrapper{
+    margin-right: 1rem;
+}
+
+.legend{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.legend:not(:last-child){
+    margin-right: 1rem;
+}
+
+.legendIcon{
+    width: 20px;
+    margin-right: 0.5rem;
+}
