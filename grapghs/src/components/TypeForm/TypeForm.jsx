@@ -4,13 +4,13 @@ import { useEffect } from 'react';
 
 const TypeForm = ({ setData }) => {
     useEffect(() => {
-        fetch(`http://localhost:3000?included_response_ids=zeeji8jl0z7otiqzvzeexgymvj11w120`)
+        fetch(`https://api.typeform.com/forms/PJ1tgUNv/responses?included_response_ids=zeeji8jl0z7otiqzvzeexgymvj11w120`)
             .then((res) => res.json())
             .then((res) => setData(res.items[0].answers))
     }, [])
 
     const test = (payload) => {
-        fetch(`http://localhost:3000?included_response_ids=${payload.responseId}`)
+        fetch(`https://api.typeform.com/forms/PJ1tgUNv/responses?included_response_ids=${payload.responseId}`)
             .then((res) => res.json())
             .then((res) => setData(res.items[0].answers))
     }
